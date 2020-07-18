@@ -78,3 +78,6 @@ async def redirect(shortened: str) -> None:
         raise HTTPException(status_code=404, detail="Link does not exist")
     return RedirectResponse(url=url["original_url"])
 
+@app.get("/")
+async def redirect_docs():
+    return RedirectResponse("/docs")@app.get("/")
