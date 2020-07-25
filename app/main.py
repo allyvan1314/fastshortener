@@ -80,4 +80,4 @@ async def redirect(shortened: str) -> None:
 
 @app.get("/")
 async def redirect_docs():
-    return RedirectResponse("/docs")@app.get("/")
+    return RedirectResponse("/docs")
